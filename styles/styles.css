@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #cecece;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.calc-container {
+    width: 300px;
+    height: auto;
+    background-color: #262626;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.display {
+    margin-bottom: 10px;
+    height: 100px;
+    padding: 10px;
+    background: #f0f0f0;
+    color: #000;
+    border-radius: 5px;
+}
+
+.ops-and-nums {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 400px;
+    /* justify-items: center;
+    align-items: center; */
+    place-items: center;
+    gap: 5px;
+}
+
+.number.dbl {
+    grid-column-start: span 2;
+}
+
+.operation, .number {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    background: rgb(73, 73, 73);
+}
+
+.number:hover {
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.operation, .number {
+    border-radius: 5px;
+}
+
+.operation.blue {
+    background: rgba(34, 152, 225, 1);
+}
+
+.operation.blue:hover {
+    background: rgba(34, 152, 225, 0.7);
+    cursor: pointer;
+}
+
+.operation.gray {
+    background: rgb(191, 191, 191);
+}
+
+.operation.gray:hover {
+    background: rgba(191, 191, 191, 0.7);
+    cursor: pointer;
+}
