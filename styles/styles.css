@@ -17,6 +17,9 @@ body {
     align-items: center;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
+    background: #ff0028;
+    position: relative;
+    font-size: 1.45em;
 }
 
 .calc-container {
@@ -39,7 +42,6 @@ body {
     flex-direction: column;
     align-items: end;
     justify-content: space-between;
-    font-size: 1.4em;
     font-weight: 600;
 }
 
@@ -47,13 +49,15 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 400px;
-    /* justify-items: center;
-    align-items: center; */
     place-items: center;
     gap: 5px;
 }
 
-.number.dbl {
+.last-op {
+    color: #6b6b6b;
+}
+
+#evaluate {
     grid-column-start: span 2;
 }
 
@@ -115,4 +119,26 @@ body {
 .operation.green:active {
     background: rgba(0, 199, 46, 0.5);
     cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#github-logo {
+    height: 30px;
+    transition: all .3s ease-in-out;
+    border-radius: 50%;
+}
+
+#github-logo:hover {
+    background: white;
+    border-radius: 50%;
+    transform: scale(1.1);
 }
