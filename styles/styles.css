@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: #cecece;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,9 +32,15 @@ body {
     margin-bottom: 10px;
     height: 100px;
     padding: 10px;
-    background: #f0f0f0;
+    background: #ffffff;
     color: #000;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    font-size: 1.4em;
+    font-weight: 600;
 }
 
 .ops-and-nums {
@@ -62,9 +68,12 @@ body {
 .number {
     background: rgb(73, 73, 73);
 }
-
 .number:hover {
     background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+.number:active {
+    background: rgb(73, 73, 73);
     cursor: pointer;
 }
 
@@ -75,17 +84,35 @@ body {
 .operation.blue {
     background: rgba(34, 152, 225, 1);
 }
-
 .operation.blue:hover {
     background: rgba(34, 152, 225, 0.7);
+    cursor: pointer;
+}
+.operation.blue:active {
+    background: rgba(34, 152, 225, 0.5);
     cursor: pointer;
 }
 
 .operation.gray {
     background: rgb(191, 191, 191);
 }
-
 .operation.gray:hover {
     background: rgba(191, 191, 191, 0.7);
+    cursor: pointer;
+}
+.operation.gray:active {
+    background: rgba(191, 191, 191, 0.5);
+    cursor: pointer;
+}
+
+.operation.green {
+    background: rgb(0, 199, 46);
+}
+.operation.green:hover {
+    background: rgba(0, 199, 46, 0.7);
+    cursor: pointer;
+}
+.operation.green:active {
+    background: rgba(0, 199, 46, 0.5);
     cursor: pointer;
 }

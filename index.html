@@ -12,27 +12,30 @@
 </head>
 <body>
     <div class="calc-container">
-        <div class="display"></div>
+        <div class="display">
+            <div class="last-op"></div>
+            <div class="current-op">0</div>
+        </div>
         <div class="ops-and-nums">
-            <div class="operation gray">AC</div>
-            <div class="operation gray">+/-</div>
-            <div class="operation gray">%</div>
-            <div class="operation blue">÷</div>
-            <div class="number">7</div>
-            <div class="number">8</div>
-            <div class="number">9</div>
-            <div class="operation blue">*</div>
-            <div class="number">4</div>
-            <div class="number">5</div>
-            <div class="number">6</div>
-            <div class="operation blue">-</div>
-            <div class="number">1</div>
-            <div class="number">2</div>
-            <div class="number">3</div>
-            <div class="operation blue">+</div>
-            <div class="number dbl">0</div>
-            <div class="number">.</div>
-            <div class="operation blue">=</div>
+            <div id="clear" class="operation gray">AC</div>
+            <div id="pos-neg" class="operation gray">+/-</div>
+            <div data-operation="percent" class="operation gray">%</div>
+            <div data-operation="divide" class="operation blue">÷</div>
+            <div data-number="seven" class="number">7</div>
+            <div data-number="eight" class="number">8</div>
+            <div data-number="nine" class="number">9</div>
+            <div data-operation="multiply" class="operation blue">*</div>
+            <div data-number="four" class="number">4</div>
+            <div data-number="five" class="number">5</div>
+            <div data-number="six" class="number">6</div>
+            <div data-operation="subtract" class="operation blue">-</div>
+            <div data-number="one" class="number">1</div>
+            <div data-number="two" class="number">2</div>
+            <div data-number="three" class="number">3</div>
+            <div data-operation="add" class="operation blue">+</div>
+            <div data-number="zero" class="number dbl">0</div>
+            <div id="decimal" class="number">.</div>
+            <div id="evaluate" class="operation green">=</div>
         </div>
     </div>
 </body>
